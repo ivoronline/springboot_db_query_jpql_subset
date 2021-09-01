@@ -12,20 +12,13 @@ public class MyController {
   @Autowired PersonRepository personRepository;
 
   //================================================================
-  // SOME PROPERTIES AS STRING
+  // RETURN PERSON STRING
   //================================================================
-  @RequestMapping("SomePropertiesAsString")
-  String someProperties() {
-    String personName = personRepository.somePropertiesAsString();
+  @RequestMapping("ReturnPersonString")
+  String returnPersonString() {
+    String personName = personRepository.returnPersonString();
     return personName;
   }
 
-  //================================================================
-  // SOME PROPERTIES AS DTO
-  //================================================================
-  @RequestMapping("SomePropertiesAsDTO")
-  PersonDTO somePropertiesAsDTO() {
-    PersonDTO personDTO = personRepository.somePropertiesAsDTO();
-    return personDTO;
-  }
+
 }
