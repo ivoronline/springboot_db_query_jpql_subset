@@ -10,10 +10,7 @@ public interface PersonRepository extends CrudRepository<Person, Integer> {
   // RETURN SCALAR
   //=======================================================================================
   // 20
-  @Query(
-    value = "SELECT john.age FROM Person john WHERE john.name = 'John' AND john.age = 20",
-    nativeQuery = true
-  )
+  @Query(value = "SELECT john.age FROM Person john WHERE john.name = 'John' AND john.age = 20")
   Integer returnScalar();
 
   //=======================================================================================

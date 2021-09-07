@@ -12,6 +12,9 @@ public class LoadPersons implements CommandLineRunner {
 
   @Autowired PersonRepository personRepository;
 
+  //=======================================================================================
+  // RUN
+  //=======================================================================================
   @Override
   @Transactional
   public void run(String... args) throws Exception {
